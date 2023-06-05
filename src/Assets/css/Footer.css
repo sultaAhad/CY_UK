@@ -1,0 +1,257 @@
+/* footer css start */
+.form-footer h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.footer-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.form-footer {
+	padding: 0px 0 0 0;
+}
+.form-footer h2 small {
+	font-weight: normal;
+	color: #888;
+	display: block;
+}
+.form-footer .footer {
+	text-align: center;
+}
+.form-footer .footer a {
+	color: #53b2c8;
+}
+.logo-para h1 {
+	position: relative;
+}
+.logo-para h1:after {
+	content: "";
+	height: 40px;
+	width: 40px;
+	background: var(--bluetype-background-color);
+	position: absolute;
+	bottom: 23px;
+	margin-left: 20px;
+}
+.logo-para h5 {
+	font-size: 29px;
+	margin-top: 55px;
+	margin-bottom: 20px;
+}
+.footer-iconics ul {
+	display: flex;
+	gap: 30px;
+	margin: 0;
+}
+.footer-iconics {
+	margin: 68px 0 0 0;
+}
+.footer-wrapper ul li {
+	margin-bottom: 0px;
+	padding-right: 70px;
+}
+.footer-iconics ul li {
+	width: 30px;
+	height: 30px;
+	background: var(--bluetype-background-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	color: #fff;
+}
+footer.footer {
+	padding: 110px 0 40px 0;
+}
+.row.footer-margin {
+	margin-top: 20px;
+}
+.footer-all-right h6 {
+	color: #292929;
+	font-family: var(--light-font-family);
+	font-size: 14px;
+	padding: 20px 0 0 4px;
+}
+.footer-wrapper h5 {
+	font-size: 28px;
+	font-family: var(--regular-font-family);
+}
+.footer-wrapper ul li a {
+	font-size: 14px;
+	font-family: var(--light-font-family);
+	color: #000000;
+	text-decoration: none;
+}
+/* form starting stylings ------------------------------- */
+.group {
+	position: relative;
+	margin-bottom: 19px;
+}
+.form-footer .footer-submit {
+	color: #0f7ba1;
+	font-family: var(--regular-font-family);
+	font-size: 1rem;
+	background: var(--bluetype-background-color);
+	color: #ffffff !important;
+	border-radius: 20px;
+	width: 22%;
+	text-align: center;
+	padding: 9px 32px;
+	font-family: var(--medium-font-family);
+	font-size: 16px;
+}
+li.nav-item.cargo a {
+	background: var(--bluetype-background-color);
+	color: #ffffff !important;
+	border-radius: 20px;
+	width: 130%;
+	text-align: center;
+	padding: 29px 2px;
+	font-family: var(--medium-font-family);
+	font-size: 16px;
+	height: 39px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-footer input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #707070;
+	background: transparent;
+	border-radius: 0;
+}
+.form-footer input:focus {
+	outline: none;
+	box-shadow: none;
+}
+.footer-wrapper ul {
+	padding: 0;
+}
+.footer-iconics ul li a {
+	color: #ffff;
+}
+/* LABEL ======================================= */
+.form-footer input:focus ~ label {
+	top: -10px;
+	font-size: 14px;
+	color: var(--bluetype-background-color);
+}
+.form-footer label {
+	color: #999;
+	font-size: clamp(15px, 5vw, 18px);
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+/* active state */
+
+.footer-wrapper.margin-wrapper ul {
+	margin-left: 3px;
+	padding: 0;
+}
+/* BOTTOM BARS ================================= */
+.form-footer .bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.form-footer .bar:before,
+.form-footer .bar:after {
+	content: "";
+	height: 1px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: var(--bluetype-background-color);
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.5s ease all;
+}
+.form-footer input::placeholder {
+	font-family: var(--light-font-family);
+}
+.form-footer .bar:before {
+	left: 50%;
+}
+.form-footer .bar:after {
+	right: 50%;
+}
+
+/* active state */
+.form-footer input:focus ~ .bar:before,
+.form-footer input:focus ~ .bar:after {
+	width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.form-footer .highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* active state */
+.form-footer input:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	-moz-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+@-moz-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+@keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+#motionPath {
+	overflow: visible;
+	height: 100%;
+	max-width: 100%;
+}
+
+#motionPath path {
+	stroke-width: 2;
+	stroke: gray;
+}
+
+#motionPath .astronaut {
+	visibility: hidden;
+}
+/* footer css end */

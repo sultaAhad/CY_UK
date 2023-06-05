@@ -1,0 +1,28 @@
+a.contect-us-head.nav-link {
+	background: var(--bluetype-background-color);
+	color: #ffffff !important;
+	border-radius: 20px;
+	/* width: 26% !important; */
+	text-align: center;
+	padding: 20px 15px;
+	font-family: var(--medium-font-family);
+	font-size: 16px;
+	height: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar-nav a.nav-link {
+	text-align: center;
+	margin: 8px;
+}
+a.nav-link.active {
+	color: var(--bluetype-background-color) !important;
+	font-family: var(--regular-font-family) !important;
+	font-size: 16px !important;
+}
