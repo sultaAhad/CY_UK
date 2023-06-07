@@ -5,3 +5,63 @@
 	border-radius: 20px;
 	margin-top: 18px;
 }
+.banner-heading.position-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	height: 100%;
+}
+/* about css start */
+section#about-us {
+	padding: 60px 0;
+}
+.about-btn {
+	margin-top: 30px;
+}
+.about-heading-para p {
+	padding-right: 90px;
+	line-height: 1.5;
+	font-size: 13px;
+}
+.list-about ul li p {
+	padding-right: 100px;
+	line-height: 1.5;
+	margin: 10px 0;
+	font-size: 13px;
+}
+.about-heading-para h2 {
+	font-size: 25px;
+}
+.list-about ul li svg {
+	width: 25px;
+	height: 25px;
+	background: #ffffff;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--bluetype-background-color);
+	color: var(--bluetype-background-color);
+	padding: 5px;
+}
+.list-about ul li {
+	display: flex;
+	gap: 20px;
+	margin: 10px 0 0 0;
+	align-items: center;
+}
+.sec-about-img img {
+	border-radius: 30px;
+}
+.about-heading h2 {
+	font-size: clamp(50px, 5vw, 80px);
+	font-family: var(--bold-font-family);
+}
+section#business h1 {
+	font-size: clamp(50px, 5vw, 80px);
+}
+.review-heading h1 {
+	font-size: clamp(25px, 5vw, 80px);
+}
+/* about css end */

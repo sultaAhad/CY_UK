@@ -60,7 +60,7 @@ html {
 }
 body {
 	overflow: hidden;
-	background-color: #f2f2f2;
+	background-color: #f2f2f2 !important;
 	margin: 0;
 	padding: 0;
 	height: 100vh;
@@ -152,5 +152,15 @@ li {
 	list-style: none;
 }
 ul {
-	padding: 0;
+	padding: 0 !important;
+}
+.btn {
+	background: var(--bluetype-background-color) !important;
+	color: #ffffff !important;
+	border-radius: 20px !important;
+	width: 22% !important;
+	text-align: center !important;
+	padding: 7px 0 !important;
+	font-family: var(--medium-font-family) !important;
+	font-size: 16px !important;
 }

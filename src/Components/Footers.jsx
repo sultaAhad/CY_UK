@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 import "../Assets/css/Footer.css";
 import { FaFacebookF, FaTwitter, FaYoutube, FaShareAlt } from "react-icons/fa";
 
-const footer = () => {
+const Footers = () => {
 	return (
 		<>
 			<Container>
@@ -141,4 +141,4 @@ const footer = () => {
 	);
 };
 
-export default footer;
+export default Footers;
