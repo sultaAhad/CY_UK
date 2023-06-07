@@ -4,7 +4,7 @@ import Header from "../Components/Header";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { video, cran } from "../Image/Index";
+import { video, cran, plan, logistic, projectservice } from "../Image/Index";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -123,42 +123,53 @@ const Home = () => {
 				</Container>
 			</section>
 			<section id="business">
-    <div class="background-img">
-        <img src="img/logistic.webp" class="img-fluid" alt="">
-    </div>
-    <Container>
-        <div class="row">
-            <div class="col-lg-12 py-5">
-                <h1><span class="span">What </span> CY UK Offers</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="business-card card1">
-                    <img src="img/plan.webp" class="img-fluid" alt="">
-                    <h3>Aircargo Services</h3>
-                    <h2>Faster Cheaper &amp; reliable </h2>
-                    <p>UUltricies mi quis hendrerit dolor magna eget est. Rhoncus urna neque viverra justo nec ultrices
-                        dui sapien. At auctor urna nunc id cursus metus aliquam. Maecenas accumsan lacus vel facilisis
-                        volutpat. Et malesuada fames. </p>
-                    <a class="btn" href="service.php">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="business-card card1">
-                    <img src="img/project-service.webp" class="img-fluid" alt="">
-                    <h3>Project Services</h3>
-                    <h2>Faster Cheaper &amp; reliable </h2>
-                    <p>UUltricies mi quis hendrerit dolor magna eget est. Rhoncus urna neque viverra justo nec ultrices
-                        dui sapien. At auctor urna nunc id cursus metus aliquam. Maecenas accumsan lacus vel facilisis
-                        volutpat. Et malesuada fames. </p>
-                    <a class="btn" href="service.php">Read More</a>
-                </div>
-            </div>
-
-        </div>
-    </Container>
-</section>
+				<div className="background-img">
+					<img src={logistic} class="img-fluid" alt="" />
+				</div>
+				<Container>
+					<Row>
+						<Col lg={12} className="py-5">
+							<h1>
+								<span class="span">What </span> CY UK Offers
+							</h1>
+						</Col>
+					</Row>
+					<Row>
+						<Col lg={6}>
+							<div className="business-card card1">
+								<img src={plan} class="img-fluid" alt="" />
+								<h3>Aircargo Services</h3>
+								<h2>Faster Cheaper &amp; reliable </h2>
+								<p>
+									UUltricies mi quis hendrerit dolor magna eget est. Rhoncus
+									urna neque viverra justo nec ultrices dui sapien. At auctor
+									urna nunc id cursus metus aliquam. Maecenas accumsan lacus vel
+									facilisis volutpat. Et malesuada fames.{" "}
+								</p>
+								<Link className="btn" to="">
+									Read More
+								</Link>
+							</div>
+						</Col>
+						<Col lg={6}>
+							<div className="business-card card1">
+								<img src={projectservice} className="img-fluid" alt="" />
+								<h3>Project Services</h3>
+								<h2>Faster Cheaper &amp; reliable </h2>
+								<p>
+									UUltricies mi quis hendrerit dolor magna eget est. Rhoncus
+									urna neque viverra justo nec ultrices dui sapien. At auctor
+									urna nunc id cursus metus aliquam. Maecenas accumsan lacus vel
+									facilisis volutpat. Et malesuada fames.{" "}
+								</p>
+								<Link className="btn" to="">
+									Read More
+								</Link>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</section>
 
 			<Footers />
 		</>
