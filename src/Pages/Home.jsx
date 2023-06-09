@@ -7,6 +7,10 @@ import Col from "react-bootstrap/Col";
 import { video, cran, plan, logistic, projectservice } from "../Image/Index";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Home = () => {
 	return (
@@ -57,7 +61,7 @@ const Home = () => {
 			</section>
 			<section id="about-us">
 				<Container>
-					<div class="about-wrapper">
+					<div className="about-wrapper">
 						<Row>
 							<Col lg={7}>
 								<div className="about-heading">
@@ -124,20 +128,20 @@ const Home = () => {
 			</section>
 			<section id="business">
 				<div className="background-img">
-					<img src={logistic} class="img-fluid" alt="" />
+					<img src={logistic} className="img-fluid" alt="" />
 				</div>
 				<Container>
 					<Row>
 						<Col lg={12} className="py-5">
 							<h1>
-								<span class="span">What </span> CY UK Offers
+								<span className="span">What </span> CY UK Offers
 							</h1>
 						</Col>
 					</Row>
 					<Row>
 						<Col lg={6}>
 							<div className="business-card card1">
-								<img src={plan} class="img-fluid" alt="" />
+								<img src={plan} className="img-fluid" alt="" />
 								<h3>Aircargo Services</h3>
 								<h2>Faster Cheaper &amp; reliable </h2>
 								<p>
@@ -170,7 +174,162 @@ const Home = () => {
 					</Row>
 				</Container>
 			</section>
-
+			<section id="quality">
+				<Container>
+					<div className="main-quantity">
+						<Row>
+							<Col lg={6}>
+								<div className="quality-heading">
+									<h1>
+										CY UK <span className="span"> Qualities</span>
+									</h1>
+									<h4>Here is Why We Are Best </h4>
+									<h2>01</h2>
+									{/* <Link className="btn" to="">Book Now</Link> */}
+								</div>
+							</Col>
+							<Col lg={6}>
+								<Swiper
+									modules={[Pagination]}
+									slidesPerView={3}
+									direction={"vertical"}
+									pagination={{
+										clickable: true,
+									}}
+									className="mySwiper"
+								>
+									<SwiperSlide>
+										<h4>
+											China and Far East Specialists Comprehensive and reliable
+											network
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>
+											China and Far East Specialists Comprehensive and reliable
+											network
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>
+											China and Far East Specialists Comprehensive and reliable
+											network
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+									<SwiperSlide>
+										<h4>15 years’ experience with HM Customs in UK</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur
+											sint occaecat cupidatat non proident, sunt in culpa qui
+											officia deserunt mollit anim id est laborum.
+										</p>
+									</SwiperSlide>
+								</Swiper>
+							</Col>
+						</Row>
+					</div>
+				</Container>
+			</section>
 			<Footers />
 		</>
 	);
