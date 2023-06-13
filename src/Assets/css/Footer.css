@@ -204,7 +204,9 @@ li.nav-item.cargo a {
 	pointer-events: none;
 	opacity: 0.5;
 }
-
+.all-about-footer.row {
+    padding: 110px 0 40px 0;
+}
 /* active state */
 .form-footer input:focus ~ .highlight {
 	-webkit-animation: inputHighlighter 0.3s ease;

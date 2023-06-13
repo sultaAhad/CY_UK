@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from "react";
 import Footers from "../Components/Footers";
 import Header from "../Components/Header";
+import Faqs from "../Components/Faqs";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { video, cran, plan, logistic, projectservice } from "../Image/Index";
+import {
+	video,
+	cran,
+	plan,
+	logistic,
+	projectservice,
+	logistic1,
+	softwareengineer1,
+	softwareengineer,
+} from "../Image/Index";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -35,6 +45,40 @@ const Home = () => {
 			id: 1,
 			title: "15 years’ experience with HM Customs in UK",
 			para: "elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis			nostrud exercitation ullamco laboris nisi ut aliquip			ex ea commodo consequat. Duis aute irure dolor in 			reprehenderit in voluptate velit esse cillum dolore eu			fugiat nulla pariatur. Excepteur sint occaecat			cupidatat non proident, sunt in culpa qui officia			deserunt mollit anim id est laborum.",
+		},
+	];
+	const dateslider = [
+		{
+			id: 1,
+			title: "Software Engineer",
+			para: "	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate .",
+			img: softwareengineer,
+			engineername: "Jason Millers",
+			posted: "Posted on Jan 2022",
+		},
+		{
+			id: 1,
+			title: "Software Engineer",
+			para: "	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate .",
+			img: softwareengineer1,
+			engineername: "Jason Millers",
+			posted: "Posted on Jan 2022",
+		},
+		{
+			id: 1,
+			title: "Software Engineer",
+			para: "	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate .",
+			img: softwareengineer,
+			engineername: "Jason Millers",
+			posted: "Posted on Jan 2022",
+		},
+		{
+			id: 1,
+			title: "Software Engineer",
+			para: "	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate .",
+			img: softwareengineer1,
+			engineername: "Jason Millers",
+			posted: "Posted on Jan 2022",
 		},
 	];
 
@@ -215,9 +259,13 @@ const Home = () => {
 							</Col>
 							<Col lg={6}>
 								<Swiper
-									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									modules={[Navigation, Pagination, Autoplay, Scrollbar, A11y]}
 									spaceBetween={10}
 									slidesPerView={2}
+									autoplay={{
+										delay: 2000,
+										disableOnInteraction: false,
+									}}
 									direction={"vertical"}
 									// pagination={{
 									// 	clickable: false,
@@ -230,7 +278,7 @@ const Home = () => {
 											<SwiperSlide>
 												{({ isActive }) => (
 													<div>
-														<div key={index}>
+														<div key={index} virtualIndex={index}>
 															<h4>{item.title}</h4>
 															<p>{item.para}</p>
 														</div>
@@ -245,6 +293,85 @@ const Home = () => {
 					</div>
 				</Container>
 			</section>
+			<section id="review-about">
+				<div className="background-img1">
+					<img src={logistic1} className="img-fluid" alt="" />
+				</div>
+				<Container>
+					<Row>
+						<Col lg={12}>
+							<div className="review-heading">
+								<h1>
+									<span className="span">Reviews About</span> CY UK
+								</h1>
+							</div>
+							<Row>
+								<Col lg={6}>
+									<div className="review-heading">
+										<h2>Who we Are and What we do?</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Condimentum id venenatis a condimentum vitae
+											sapien. Velit euismod in pellentesque massa placerat duis
+											ultricies lacus sed.
+										</p>
+									</div>
+								</Col>
+							</Row>
+							<Row>
+								<Col lg={12}>
+									<Swiper
+										modules={[Navigation, Pagination, Scrollbar,Autoplay, A11y]}
+										spaceBetween={10}
+										slidesPerView={2}
+										autoplay={{
+											delay: 2000,
+											disableOnInteraction: false,
+										}}
+										// pagination={{
+										// 	clickable: false,
+										// }}
+										onSlideChange={() => console.log("slide change")}
+										className="mySwiper1"
+									>
+										{dateslider.map((item, index) => {
+											return (
+												<SwiperSlide>
+													<Row className="slider-review" key={index}>
+														<Col lg={5}>
+															<div className="img-review">
+																<img
+																	src={item.img}
+																	className="img-fluid"
+																	alt=""
+																/>
+															</div>
+														</Col>
+														<Col lg={7}>
+															<div className="review-heading-para">
+																<h6>{item.title}</h6>
+																<p>{item.para}</p>
+															</div>
+															<div className="name-engineers">
+																<h5>{item.engineername}</h5>
+																<h6>{item.posted}</h6>
+															</div>
+														</Col>
+													</Row>
+												</SwiperSlide>
+											);
+										})}
+									</Swiper>
+								</Col>
+							</Row>
+						</Col>
+					</Row>
+				</Container>
+			</section>
+
+			<Faqs />
+
 			<Footers />
 		</>
 	);
