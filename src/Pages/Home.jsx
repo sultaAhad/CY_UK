@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footers from "../Components/Footers";
 import Header from "../Components/Header";
 import Container from "react-bootstrap/Container";
@@ -8,11 +8,36 @@ import { video, cran, plan, logistic, projectservice } from "../Image/Index";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Home = () => {
+	const date = [
+		{
+			id: 1,
+			title:
+				"China and Far East Specialists Comprehensive and reliable network",
+			para: "	elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis			nostrud exercitation ullamco laboris nisi ut aliquip			ex ea commodo consequat. Duis aute irure dolor in 			reprehenderit in voluptate velit esse cillum dolore eu			fugiat nulla pariatur. Excepteur sint occaecat			cupidatat non proident, sunt in culpa qui officia			deserunt mollit anim id est laborum.",
+		},
+		{
+			id: 1,
+			title: "15 years’ experience with HM Customs in UK",
+			para: "elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis			nostrud exercitation ullamco laboris nisi ut aliquip			ex ea commodo consequat. Duis aute irure dolor in 			reprehenderit in voluptate velit esse cillum dolore eu			fugiat nulla pariatur. Excepteur sint occaecat			cupidatat non proident, sunt in culpa qui officia			deserunt mollit anim id est laborum.",
+		},
+		{
+			id: 1,
+			title:
+				"China and Far East Specialists Comprehensive and reliable network",
+			para: "	elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis			nostrud exercitation ullamco laboris nisi ut aliquip			ex ea commodo consequat. Duis aute irure dolor in 			reprehenderit in voluptate velit esse cillum dolore eu			fugiat nulla pariatur. Excepteur sint occaecat			cupidatat non proident, sunt in culpa qui officia			deserunt mollit anim id est laborum.",
+		},
+		{
+			id: 1,
+			title: "15 years’ experience with HM Customs in UK",
+			para: "elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis			nostrud exercitation ullamco laboris nisi ut aliquip			ex ea commodo consequat. Duis aute irure dolor in 			reprehenderit in voluptate velit esse cillum dolore eu			fugiat nulla pariatur. Excepteur sint occaecat			cupidatat non proident, sunt in culpa qui officia			deserunt mollit anim id est laborum.",
+		},
+	];
+
 	return (
 		<>
 			<Header />
@@ -190,140 +215,30 @@ const Home = () => {
 							</Col>
 							<Col lg={6}>
 								<Swiper
-									modules={[Pagination]}
-									slidesPerView={3}
+									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									spaceBetween={10}
+									slidesPerView={2}
 									direction={"vertical"}
-									pagination={{
-										clickable: true,
-									}}
+									// pagination={{
+									// 	clickable: false,
+									// }}
+									onSlideChange={() => console.log("slide change")}
 									className="mySwiper"
 								>
-									<SwiperSlide>
-										<h4>
-											China and Far East Specialists Comprehensive and reliable
-											network
-										</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>
-											China and Far East Specialists Comprehensive and reliable
-											network
-										</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>
-											China and Far East Specialists Comprehensive and reliable
-											network
-										</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
-									<SwiperSlide>
-										<h4>15 years’ experience with HM Customs in UK</h4>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum.
-										</p>
-									</SwiperSlide>
+									{date.map((item, index) => {
+										return (
+											<SwiperSlide>
+												{({ isActive }) => (
+													<div>
+														<div key={index}>
+															<h4>{item.title}</h4>
+															<p>{item.para}</p>
+														</div>
+													</div>
+												)}
+											</SwiperSlide>
+										);
+									})}
 								</Swiper>
 							</Col>
 						</Row>
