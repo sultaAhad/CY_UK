@@ -1,0 +1,245 @@
+section#main-banner {
+    position: relative;
+}
+.about-main-img svg {
+	width: 110%;
+	height: 110%;
+	margin-left: -60px;
+}
+.banner-heading-para h3 {
+	font-size: 35px;
+	font-family: var(--regular-font-family);
+}
+.about-main-img img {
+    mix-blend-mode: darken;
+    background: #fff;
+    color: #fff;
+}
+.business-card.card1 a.btn {
+    margin-top: 20px;
+}
+.heading-slider h2 {
+	font-family: var(--medium-font-family);
+	font-size: 70px;
+	margin: 0px 70px;
+}
+.about-heading h2 {
+	font-size: clamp(50px, 5vw, 80px);
+	font-family: var(--bold-font-family);
+}
+.ship-wrapper {
+    padding: 30px 30px;
+    background: #f9f9f9;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px 0px rgb(59 49 49 / 60%);
+    -webkit-box-shadow: 1px 1px 8px 0px rgb(59 49 49 / 14%);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(59, 49, 49, 0.6);
+    margin: 80px 0 0 0;
+}
+.ship-wrapper img {
+	border-radius: 10px;
+}
+.business-card a {
+	width: 26%;
+}
+.business-card h3 {
+	margin-top: 10px;
+	font-size: 47px;
+}
+.business-card p {
+	padding-right: 50px;
+	margin: 14px 0;
+	height: 80px;
+	line-height: 1.5;
+}
+p.para-about {
+	margin-top: 81px;
+}
+.business-card.card1 {
+	margin: 40px 0px 0 0px;
+}
+section#specialised {
+	position: relative;
+	padding-bottom: 80px;
+}
+.card-wrapper:nth-child(4) .business-card.card1 p {
+    margin-top: 82px;
+}
+@media (max-width: 1440px) {
+	.heading-slider h2 {
+		font-size: 65px;
+	}
+}
+@media (max-width: 1366px) {
+	.banner-heading-para h3 {
+		font-size: 26px;
+	}
+	.heading-slider h2 {
+		font-size: 60px;
+	}
+	.review-heading-para p {
+		font-size: 14px;
+	}
+	.btn {
+		width: 40%;
+	}
+	.review-heading-para h5 {
+		font-size: clamp(20px, 5vw, 28px);
+	}
+	.business-card.card1 h2 {
+		font-size: clamp(25px, 5vw, 33px);
+	}
+	.business-card h3 {
+		margin-top: 10px;
+		font-size: 35px;
+	}
+	.business-card p {
+		padding-right: 0px;
+		font-size: 13px;
+	}
+	p.para-about {
+		margin-top: 61px;
+	}
+	.business-card a {
+		width: 30%;
+	}
+}
+@media (max-width: 1280px) {
+	.banner-heading-para h3 {
+		font-size: 26px;
+	}
+	.review-heading-para p {
+		font-size: 14px;
+	}
+	.heading-slider h2 {
+		font-size: 55px;
+	}
+	.btn {
+		width: 40%;
+	}
+	.review-heading-para h5 {
+		font-size: clamp(20px, 5vw, 28px);
+	}
+	.business-card.card1 h2 {
+		font-size: clamp(25px, 5vw, 33px);
+	}
+	.business-card h3 {
+		margin-top: 10px;
+		font-size: 35px;
+	}
+	.business-card p {
+		padding-right: 0px;
+		font-size: 13px;
+	}
+	p.para-about {
+		margin-top: 61px;
+	}
+	.business-card a {
+		width: 30%;
+	}
+}
+@media (max-width: 1024px) {
+	.banner-heading-para h3 {
+		font-size: 26px;
+	}
+	.review-heading-para h4 {
+		font-size: 25px;
+	}
+	.banner-heading h1 {
+		position: absolute;
+		top: -20px;
+		font-size: 70px;
+	}
+	.heading-slider h2 {
+		font-size: 44px;
+	}
+	.btn {
+		width: 40%;
+	}
+	.review-heading-para p {
+		font-size: 12px;
+	}
+	.review-heading-para h5 {
+		font-size: clamp(16px, 5vw, 19px);
+	}
+	.business-card.card1 h2 {
+		font-size: clamp(25px, 5vw, 33px);
+	}
+	.business-card h3 {
+		margin-top: 10px;
+		font-size: 35px;
+	}
+	.business-card p {
+		padding-right: 0px;
+		font-size: 13px;
+	}
+	p.para-about {
+		margin-top: 61px;
+	}
+	.business-card a {
+		width: 30%;
+	}
+}
+@media (max-width: 912px) {
+	.heading-slider h2 {
+		font-size: 40px;
+	}
+}
+@media (max-width: 820px) {
+	.heading-slider h2 {
+		font-size: 35px;
+	}
+}
+@media (max-width: 768px) {
+	.heading-slider h2 {
+		font-size: 33px;
+	}
+}
+@media (max-width: 575px) {
+	.heading-slider h2 {
+		font-size: 24px;
+	}
+	.banner-heading h1 {
+		position: absolute;
+		top: 0px;
+		font-size: 50px;
+		left: 0;
+	}
+}
+@media (max-width: 414px) {
+	.banner-heading-para h3 {
+		font-size: 21px;
+	}
+	.heading-slider h2 {
+		font-size: 17px;
+	}
+	.ship-wrapper {
+		margin: 50px 0;
+	}
+	.btn {
+		width: 40%;
+	}
+	.business-card a {
+		width: 40%;
+		margin-top: 26px;
+	}
+	.business-card p {
+		padding-right: 0px;
+	}
+	.business-card h3 {
+		margin-top: 10px;
+		font-size: 33px;
+	}
+	p.para-about {
+		margin-top: 21px;
+	}
+}
+@media (max-width: 360px) {
+	.banner-heading h1 {
+		top: 3px;
+		font-size: 46px;
+	}
+	.heading-slider h2 {
+		font-size: 16px;
+	}
+}

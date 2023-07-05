@@ -44,8 +44,8 @@ const Header = () => {
 												Home
 											</Nav.Link>
 											<Nav.Link href="About">About Us</Nav.Link>
-											<Nav.Link href="#link">Our Services</Nav.Link>
-											<Nav.Link href="#link">Tools</Nav.Link>
+											<Nav.Link href="Service">Our Services</Nav.Link>
+											<Nav.Link href="Toolservice">Tools</Nav.Link>
 											<Nav.Link href="#link">Contact Us</Nav.Link>
 											<Nav.Link className="contect-us-head" href="#link">
 												Cargo Tracking

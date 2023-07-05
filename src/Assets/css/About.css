@@ -11,6 +11,21 @@
 .banner-heading-para {
 	margin-top: unset !important;
 }
+section#specialised h2 {
+	font-family: var(--medium-font-family);
+	font-size: 60px;
+	margin: 0px 20px;
+}
+.quality-heading a {
+	background: #ffffff !important;
+	color: var(--bluetype-background-color) !important;
+	width: 155px !important;
+}
+section#quality .swiper-slide h4 {
+	color: #99b3bb;
+	font-size: 30px;
+	height: unset !important;
+}
 .banner-heading-para h3 {
 	font-family: var(--regular-font-family);
 }
@@ -177,7 +192,7 @@ a.faq-btn {
 	font-family: var(--regular-font-family);
 	font-size: 16px;
 	margin-left: 5px;
-	background: var(--bluetype-background-color);
+	background: var(--bluetype-background-color) !important;
 	border-radius: 20px;
 	text-align: center;
 	padding: 12px 19px;
