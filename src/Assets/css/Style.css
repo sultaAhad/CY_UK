@@ -549,6 +549,6 @@ a.faq-btn {
 @media (max-width: 1367px) {
 	.banner-heading.position-wrapper h1 {
 		position: unset !important;
-		font-size: 76px;
+		font-size: 76px !important;
 	}
 }
