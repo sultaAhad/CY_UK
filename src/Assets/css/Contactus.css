@@ -1,0 +1,254 @@
+.banner-heading-para h2 {
+	position: inherit;
+	margin-bottom: 30px;
+}
+/* form starting stylings ------------------------------- */
+.form-contact .group {
+	position: relative;
+	margin-bottom: 19px;
+}
+.banner-heading-para h2 {
+	position: inherit;
+	margin-bottom: 30px;
+	font-family: var(--regular-font-family);
+	font-size: clamp(25px, 5vw, 40px);
+	line-height: 1.2;
+	color: var(--heading-color);
+}
+
+.form-contact a {
+	color: #0f7ba1;
+	font-family: var(--regular-font-family);
+	font-size: 1rem;
+}
+.form-contact textarea {
+	font-size: 18px;
+	padding: 10px 10px 15px 2px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #707070;
+	background: transparent;
+	resize: none;
+	padding: 20px 0 0 0;
+}
+.form-contact textarea::placeholder {
+	padding: auto;
+}
+.form-contact textarea:focus {
+	outline: none;
+}
+
+/* LABEL ======================================= */
+.form-contact label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.form-footer textarea:focus ~ label,
+textarea:valid ~ label {
+	top: 0px;
+	font-size: 14px;
+	color: var(--bluetype-background-color);
+}
+/* BOTTOM BARS ================================= */
+.form-contact .bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.form-contact .bar:before,
+.bar:after {
+	content: "";
+	height: 1px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: var(--bluetype-background-color);
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.5s ease all;
+}
+.form-contact textarea::placeholder {
+	font-family: var(--light-font-family);
+}
+.form-contact .bar:before {
+	left: 50%;
+}
+.form-contact .bar:after {
+	right: 50%;
+}
+
+/* active state */
+.form-contact textarea:focus ~ .bar:before,
+textarea:focus ~ .bar:after {
+	width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.form-contact .highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* active state */
+.form-contact textarea:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	-moz-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+@-moz-keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+@keyframes inputHighlighter {
+	from {
+		background: #5264ae;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+.icon-heading h6 {
+	font-family: var(--regular-font-family);
+	font-size: clamp(12px, 5vw, 15px);
+	color: #7e7e7e;
+	margin: 0;
+}
+.icon-heading a {
+	font-family: var(--medium-font-family);
+	font-size: clamp(15px, 5vw, 15px);
+	color: #0f7ba1;
+}
+.icon-contact {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 30px 0;
+}
+.contact-banner-img img {
+	mix-blend-mode: darken;
+}
+.contact-main {
+	padding: 70px 0;
+}
+.icon-contact-us-wrapper {
+	width: 35px;
+	height: 35px;
+	background: #0f7ba1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 19px;
+	border-radius: 50px;
+	color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+	-moz-appearance: textfield; /* Firefox */
+}
+@media (max-width: 1366px) {
+	.icon-heading a {
+		font-size: clamp(10px, 5vw, 12px);
+	}
+	.icon-heading h6 {
+		font-size: clamp(12px, 5vw, 13px);
+		margin: 0;
+	}
+}
+@media (max-width: 1280px) {
+	.banner-heading-para {
+		margin-top: 101px;
+	}
+}
+@media (max-width: 1024px) {
+	.banner-heading-para {
+		margin-top: 87px;
+	}
+	.icon-heading h6 {
+		font-size: clamp(12px, 5vw, 12px);
+		margin: 0;
+	}
+	.icon-heading a {
+		font-size: clamp(9px, 5vw, 2px);
+	}
+}
+
+@media (max-width: 912px) {
+	.icon-heading a {
+		font-size: clamp(14px, 5vw, 4px);
+	}
+	.icon-heading h6 {
+		font-size: clamp(12px, 5vw, 16px);
+		margin: 0;
+	}
+}
+@media (max-width: 414px) {
+	#about-banner {
+		height: 430px;
+		background-position: center;
+	}
+	.banner-heading h1 {
+		top: -57px;
+		font-size: 50px;
+	}
+	.banner-heading-para {
+		margin-top: 10px;
+	}
+	.btn {
+		width: 40%;
+	}
+}
+@media (max-width: 360px) {
+	#about-banner {
+		height: 430px;
+		background-position: center;
+	}
+	.banner-heading h1 {
+		top: -57px;
+		font-size: 46px;
+	}
+	.banner-heading-para {
+		margin-top: 10px;
+	}
+	.btn {
+		width: 40%;
+	}
+}

@@ -54,7 +54,7 @@ function Faqs() {
 										CY UK <span className="span"> FAQs</span>
 									</h1>
 									<h4>Have Question? Read Our FAQs </h4>
-									<Link to="/" className="btn faq ">
+									<Link to="/contact-us" className="btn faq ">
 										Contact Us
 									</Link>
 									<Link

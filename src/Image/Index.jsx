@@ -21,6 +21,9 @@ import Toolbanner from "../Assets/img/toolbanner.png";
 import Toolbackground from "../Assets/img/tool-background.png";
 import toolserviceone from "../Assets/img/toolservice1.png";
 import toolservicesecond from "../Assets/img/toolservice2.png";
+import toolservicethird from "../Assets/img/toolservice3.png";
+import Servicedetailimage from "../Assets/img/service-detail.png";
+import Servicedetailship from "../Assets/img/servicedetailship.png";
 
 
 export {
@@ -47,4 +50,7 @@ export {
 	Toolbackground,
 	toolserviceone,
 	toolservicesecond,
+	Servicedetailimage,
+	toolservicethird,
+	Servicedetailship,
 };

@@ -26,7 +26,7 @@ function Service() {
 			title: "Aircargo Services",
 			secondtitle: "Faster Cheaper  reliable ",
 			para: "UUltricies mi quis hendrerit dolor magna eget est. Rhoncus            urna neque viverra justo nec ultrices dui sapien. At auctor            urna nunc id cursus metus aliquam. Maecenas accumsan lacus velfacilisis volutpat. Et malesuada fames. ",
-			url: "/About",
+			url: "/Service-detail",
 		},
 		{
 			id: 1,
@@ -34,7 +34,7 @@ function Service() {
 			title: "Project Services",
 			secondtitle: "Faster Cheaper & reliable ",
 			para: "UUltricies mi quis hendrerit dolor magna eget est. Rhoncus            urna neque viverra justo nec ultrices dui sapien. At auctor            urna nunc id cursus metus aliquam. Maecenas accumsan lacus velfacilisis volutpat. Et malesuada fames. ",
-			url: "",
+			url: "/Service-detail",
 		},
 		{
 			id: 1,
@@ -42,7 +42,7 @@ function Service() {
 			title: "Depots & Warehousing & Distributing",
 			secondtitle: "Faster Cheaper & reliable ",
 			para: "UUltricies mi quis hendrerit dolor magna eget est. Rhoncus            urna neque viverra justo nec ultrices dui sapien. At auctor            urna nunc id cursus metus aliquam. Maecenas accumsan lacus velfacilisis volutpat. Et malesuada fames. ",
-			url: "",
+			url: "/Service-detail",
 		},
 		{
 			id: 1,
@@ -50,7 +50,7 @@ function Service() {
 			title: "Agency Services",
 			secondtitle: "Faster Cheaper & reliable  ",
 			para: "UUltricies mi quis hendrerit dolor magna eget est. Rhoncus            urna neque viverra justo nec ultrices dui sapien. At auctor            urna nunc id cursus metus aliquam. Maecenas accumsan lacus velfacilisis volutpat. Et malesuada fames. ",
-			url: "",
+			url: "/Service-detail",
 		},
 	];
 
@@ -141,7 +141,7 @@ function Service() {
 												malesuada fames ac turpis egestas sed tempus. Auctor
 												augue mauris augue neque gravida.
 											</p>
-											<Link className="btn" to="/">
+											<Link className="btn" to="/Service-detail">
 												Read More
 											</Link>
 										</div>

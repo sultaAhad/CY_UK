@@ -1,6 +1,18 @@
 section#main-banner {
     position: relative;
 }
+#servicedetailbanner{
+	background-image: none !important;
+    height: unset;
+    padding-bottom: 80px;
+}
+.detail-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 100px;
+}
 .about-main-img svg {
 	width: 110%;
 	height: 110%;

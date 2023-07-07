@@ -70,21 +70,23 @@ const Footers = () => {
 									<h5>Quick Links</h5>
 									<ul>
 										<li>
-											<Link to="">Home</Link>
+											<Link to="/home">Home</Link>
 										</li>
 										<li>
-											<Link to="">About Us</Link>
+											<Link to="/about">About Us</Link>
 										</li>
 										<li>
-											<Link to="">Services</Link>
+											<Link to="/service">Services</Link>
 										</li>
 										<li>
-											<Link to="">Contact</Link>
+											<Link to="/contact-us">Contact</Link>
 										</li>
 										<li>
-											<a href="https://netfreight.descartes.com/nettrack/Login/ClientLogin.aspx">
-												Cargo Tracking
-											</a>
+											<Link
+												to="https://netfreight.descartes.com/nettrack/Login/ClientLogin.aspx"
+												target="_blank"
+											></Link>
+											Cargo Tracking
 										</li>
 									</ul>
 								</div>
@@ -94,13 +96,13 @@ const Footers = () => {
 									<h5>Legal</h5>
 									<ul>
 										<li>
-											<a href="term-condition.php">Terms &amp; Condition</a>
+											<Link to="/term-condition">Terms &amp; Condition</Link>
 										</li>
 										<li>
-											<a href="privacy.php">Privacy Policy</a>
+											<Link to="/privacy">Privacy Policy</Link>
 										</li>
 										<li>
-											<a href="shipment.php">Shipment</a>
+											<Link to="/shipment">Shipment</Link>
 										</li>
 									</ul>
 								</div>
@@ -127,7 +129,6 @@ const Footers = () => {
 							<Col lg={12}>
 								<div className="footer-all-right">
 									<h6>
-										{" "}
 										Ⓒ Copyrights <span id="year">2023</span> CYUK Ltd | All
 										rights reserved
 									</h6>

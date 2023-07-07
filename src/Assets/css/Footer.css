@@ -137,7 +137,8 @@ li.nav-item.cargo a {
 	color: #ffff;
 }
 /* LABEL ======================================= */
-.form-footer input:focus ~ label {
+.form-footer input:focus ~ label,
+input:valid ~ label {
 	top: -10px;
 	font-size: 14px;
 	color: var(--bluetype-background-color);
@@ -205,7 +206,7 @@ li.nav-item.cargo a {
 	opacity: 0.5;
 }
 .all-about-footer.row {
-    padding: 110px 0 40px 0;
+	padding: 110px 0 40px 0;
 }
 /* active state */
 .form-footer input:focus ~ .highlight {

@@ -154,6 +154,11 @@ li {
 ul {
 	padding: 0 !important;
 }
+.form-footer input:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
 .btn {
 	background: var(--bluetype-background-color) !important;
 	color: #ffffff !important;
@@ -199,6 +204,21 @@ section#about-us {
 }
 .about-heading-para h2 {
 	font-size: 25px;
+}
+.navbar-nav a {
+    font-family: var(--regular-font-family);
+    font-size: 16px;
+    padding: 0px 0 0px 0;
+    color: rgba(0,0,0,.55);
+}
+a.contect-us-head.nav-link.active {
+    color: #fff ! important;
+}
+.navbar-nav a.nav-link 
+a.active {
+    color: var(--bluetype-background-color);
+    font-family: var(--regular-font-family);
+    font-size: 16px;
 }
 .list-about ul li svg {
 	width: 25px;
@@ -271,7 +291,6 @@ section#business {
 }
 /* business css end */
 /* swiper */
-
 section#quality .swiper {
     width: 100%;
     height: 56vh !important;
@@ -526,4 +545,10 @@ a.faq-btn {
 	padding: 12px 19px;
 	font-family: var(--medium-font-family);
 	font-size: 16px;
+}
+@media (max-width: 1367px) {
+	.banner-heading.position-wrapper h1 {
+		position: unset !important;
+		font-size: 76px;
+	}
 }

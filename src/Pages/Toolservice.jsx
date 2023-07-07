@@ -10,6 +10,7 @@ import {
 	Toolbackground,
 	toolservicesecond,
 	toolserviceone,
+	toolservicethird,
 } from "../Image/Index";
 import "../Assets/css/Toolservice.css";
 
@@ -106,7 +107,9 @@ function Toolservice() {
 						</Col>
 					</Row>
 					<Row>
-						<Col lg={12}></Col>
+						<Col lg={12}>
+							<img src={toolservicethird} className="img-fluid" alt="" />
+						</Col>
 					</Row>
 					<Row>
 						<Col lg={10} className=" mt-5 mb-5">

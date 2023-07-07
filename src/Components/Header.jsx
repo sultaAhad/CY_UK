@@ -6,6 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link, NavLink } from "react-router-dom";
 import "../Assets/css/Header.css";
 
 const Header = () => {
@@ -35,19 +36,26 @@ const Header = () => {
 										className=" justify-content-md-end"
 									>
 										<Nav>
-											<Nav.Link
-												href="#home"
-												className={({ isActive, isPending }) =>
-													isPending ? "pending" : isActive ? "active" : ""
-												}
-											>
-												Home
+											<Nav.Link>
+												<NavLink to="/home">Home</NavLink>
 											</Nav.Link>
-											<Nav.Link href="About">About Us</Nav.Link>
-											<Nav.Link href="Service">Our Services</Nav.Link>
-											<Nav.Link href="Toolservice">Tools</Nav.Link>
-											<Nav.Link href="#link">Contact Us</Nav.Link>
-											<Nav.Link className="contect-us-head" href="#link">
+											<Nav.Link>
+												<NavLink to="/about">About Us</NavLink>
+											</Nav.Link>
+											<Nav.Link>
+												<NavLink to="/service"> Our Services</NavLink>
+											</Nav.Link>
+											<Nav.Link>
+												<NavLink to="/tool-service"> Tools</NavLink>
+											</Nav.Link>
+											<Nav.Link>
+												<NavLink to="/contact-us"> Contact Us</NavLink>
+											</Nav.Link>
+											<Nav.Link
+												className="contect-us-head"
+												target="_blank"
+												href="https://netfreight.descartes.com/nettrack/Login/ClientLogin.aspx"
+											>
 												Cargo Tracking
 											</Nav.Link>
 										</Nav>
